@@ -44,6 +44,10 @@ export const SITE_SECTIONS = [
 		id: 'summary',
 		component: SummarySection,
 		heading: 'Summary',
+		className: {
+			wrapper: ['py-[8rem]'],
+			heading: ['before:bg-slate-200']
+		},
 		columns: [
 			[
 				'Today, we live in the digital era when the social and cultural values are often forgotten. Students miss the general knowledge in the field of culture, history, and society. Since students spend a lot of their free time playing with computers, tablets, smartphones or social networks, it is understandable that they prefer teaching and learning based on up to date ICTs.',
@@ -62,21 +66,26 @@ export const SITE_SECTIONS = [
 		component: ObjectivesSection,
 		heading: 'Objectives',
 		className: {
-			wrapper: ['bg-blue-50', 'bg-opacity-50']
+			wrapper: ['py-[6rem]', 'bg-blue-50', 'bg-opacity-50'],
+			heading: ['before:bg-blue-800', 'before:bg-opacity-10']
 		},
 		items: [
-			{ icon: '', text: 'Enhance the teacher\'s role in society by exchanging best practices and broaden professional, linguistic, social and personal competences of all project participants (students and teachers)' },
-			{ icon: '', text: 'Promote the learning of different subjects through creative and innovative teaching practice' },
-			{ icon: '', text: 'Contribute to the improvement of the application of modern ICT and widen general knowledge to all target groups' },
-			{ icon: '', text: 'Change the attitude to the common European heritage' },
-			{ icon: '', text: 'Enhance communication skills - both in mother tongue and in foreign language' },
-			{ icon: '', text: 'Enhance digital integration in learning and youth work at various levels' },
+			{ icon: 'book', text: 'Promote the learning of different subjects through creative and innovative teaching practice' },
+			{ icon: 'tablet', text: 'Contribute to the improvement of the application of modern ICT and widen general knowledge to all target groups' },
+			{ icon: 'heritage', text: 'Change the attitude to the common European heritage' },
+			{ icon: 'teacher', text: 'Enhance the teacher\'s role in society by exchanging best practices and broaden professional, linguistic, social and personal competences of all project participants (students and teachers)' },
+			{ icon: 'language-globe', text: 'Enhance communication skills - both in mother tongue and in foreign language' },
+			{ icon: 'laptop', text: 'Enhance digital integration in learning and youth work at various levels' },
 		]
 	},
 	{
 		id: 'partners',
 		component: PartnersSection,
 		heading: 'Partners',
+		className: {
+			wrapper: ['py-[8rem]'],
+			heading: ['before:bg-slate-200']
+		},
 		items: [
 			{
 				name: 'Maltepe Fen Lisesi Istanbul Turkey',
