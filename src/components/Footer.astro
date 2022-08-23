@@ -1,0 +1,21 @@
+---
+const footer = Astro.props;
+---
+
+<footer class="w-full flex flex-col h-20 text-white">
+	<div class="bg-blue-700 py-8">
+		<div class="container">
+			<img
+				width={256}
+				height="auto"
+				src="/images/img-cofunded-by.png"
+				alt="Co-funded by the Erasmus+ Programme of the European Union"
+			/>
+		</div>
+	</div>
+	<div class="bg-blue-900 py-4">
+		<div class="container">
+			<small>© {new Date().getFullYear()} Erasmus+ KA2 - Let's teach each other</small>
+		</div>
+	</div>
+</footer>

@@ -1,26 +1,27 @@
 ---
 const section = Astro.props;
 ---
-
-<div class="flex flex-col gap-4 text-white">
-	<hgroup class="flex flex-col gap-3">
-		<h2 class="text-3xl md:text-4xl">Erasmus+ KA2</h2>
-		<h1 class="text-4xl md:text-6xl font-bold">Let's teach each other</h1>
-		<small class="text-md md:text-lg"
-			><span class="font-thin">Project number</span>
-			<strong class="font-medium">2019-1-SK01-KA229-060637_2</strong>
-		</small>
-	</hgroup>
-	<img
-		width={256}
-		height="auto"
-		src="/images/img-cofunded-by.png"
-		alt="Co-funded by the Erasmus+ Programme of the European Union"
-	/>
-</div>
-<div class="rounded-md overflow-hidden">
-	<img
-		src="/images/img-section-hero.png"
-		alt="Let's teach each other (2019-2021)"
-	/>
+<div class="flex flex-col-reverse gap-8 lg:flex-row lg:items-center lg:justify-between">
+	<div class="flex flex-col gap-4 text-white">
+		<hgroup class="flex flex-col gap-3">
+			<h2 class="text-3xl md:text-4xl">{section.data.heading}</h2>
+			<h1 class="text-4xl md:text-6xl font-bold">{section.data.description}</h1>
+			<small class="text-md md:text-lg"
+				><span class="font-thin">{section.data.projectNumber.text}</span>
+				<strong class="font-medium">{section.data.projectNumber.code}</strong>
+			</small>
+		</hgroup>
+		<img
+			width={256}
+			height="auto"
+			src="/images/img-cofunded-by.png"
+			alt="Co-funded by the Erasmus+ Programme of the European Union"
+		/>
+	</div>
+	<div class="rounded-md overflow-hidden">
+		<img
+			src="/images/img-section-hero.png"
+			alt="Let's teach each other (2019-2021)"
+		/>
+	</div>
 </div>

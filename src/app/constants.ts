@@ -3,6 +3,7 @@ import SummarySection from '../sections/SummarySection.astro';
 import HeroSection from '../sections/HeroSection.astro';
 import ObjectivesSection from '../sections/ObjectivesSection.astro';
 import PartnersSection from '../sections/PartnersSection.astro';
+import DictionarySection from '../sections/DictionarySection.astro';
 
 export const SITE_NAME = 'Erasmus+ K2 | Let\'s teach each other';
 
@@ -40,8 +41,15 @@ export const SITE_SECTIONS = [
 		id: 'hero',
 		component: HeroSection,
 		className: {
-			wrapper: ['bg-gradient-to-b','from-blue-400','to-blue-600', 'py-20', 'lg:py-40', 'lg:h-[40rem]'],
-			content: ['flex flex-col flex-col-reverse gap-8 lg:flex-row lg:items-center lg:justify-between']
+			wrapper: ['bg-gradient-to-b','from-blue-400','to-blue-600', 'py-20', 'lg:py-[15rem]']
+		},
+		data: {
+			heading: 'Erasmus+ KA2',
+			description: 'Let\'s teach each other',
+			projectNumber: {
+				text: 'Project number',
+				code: '2019-1-SK01-KA229-060637_2'
+			}
 		}
 	},
 	{
@@ -72,7 +80,7 @@ export const SITE_SECTIONS = [
 		component: ObjectivesSection,
 		heading: 'Objectives',
 		className: {
-			wrapper: ['py-[6rem]', 'bg-blue-50', 'bg-opacity-50'],
+			wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
 			heading: ['before:bg-blue-800', 'before:bg-opacity-10']
 		},
 		data: {
@@ -123,12 +131,21 @@ export const SITE_SECTIONS = [
 			]
 		}
 	},
-	// {
-	// 	id: 'partners',
-	// 	component: PartnersSection,
-	// 	className: {
-	// 		wrapper: ['py-10', 'md:py-20', 'lg:py-[8rem]'],
-	// 		heading: ['before:bg-slate-200']
-	// 	},
-	// }
+	{
+		id: 'dictionary',
+		component: DictionarySection,
+		className: {
+			wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
+			heading: ['before:bg-blue-800', 'before:bg-opacity-10']
+		},
+		data: {
+			heading: 'Interactive dictionary',
+			description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi, veritatis excepturi adipisci dignissimos tenetur quis debitis aut amet a?',
+			image: '/images/img-interactive-dictionary-logo.png',
+			button: {
+				label: 'Open dictionary',
+				url: 'https://erasmus-int-dict.breakerino.me'
+			}
+		}
+	}
 ]
