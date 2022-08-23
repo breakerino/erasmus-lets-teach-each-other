@@ -1,0 +1,18 @@
+---
+import { SITE_LOGO, SITE_NAME, NAVIGATION_ITEMS } from "../app/constants";
+---
+
+<header class="sticky top-0 w-full bg-blue-400 z-10">
+	<div class="flex justify-between gap-5 text-white container px-4 py-9">
+		<img src={SITE_LOGO} alt={SITE_NAME} />
+		<nav class="flex items-center gap-8">
+			{
+				NAVIGATION_ITEMS.map(({ id, label }) => (
+					<a class="text-md uppercase font-normal" href={`#${id}`}>
+						{label}
+					</a>
+				))
+			}
+		</nav>
+	</div>
+</header>

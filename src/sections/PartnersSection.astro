@@ -1,0 +1,34 @@
+---
+const section = Astro.props;
+---
+
+<div class="flex flex-col gap-8 text-blue-800">
+	{
+		section.items.map(({ id, name, description, country }, index) => (
+			<div class="flex gap-6 items-start">
+				<div class="relative ml-8 mt-10">
+					<div class="w-12 aspect-square bg-white shadow-md p-1 rounded-md absolute -top-8 -left-8">
+						<img
+							class="w-full h-full object-contain object-center"
+							src={`/images/ico-country-logo-${country}.svg`}
+							alt={`country-logo-${country}`}
+						/>
+					</div>
+					<div class="w-24 aspect-square bg-white shadow-md p-4 rounded-md">
+						<img
+							class="w-full h-full object-contain object-center"
+							src={`/images/img-school-logo-${id}.png`}
+							alt={`school-logo-${id}`}
+						/>
+					</div>
+				</div>
+				<div class="flex flex-col flex-1">
+					<h2 class="flex-1 text-xl font-medium leading-8 mb-2">{name}</h2>
+					<p class="text-lg font-light leading-8 mb-5 last:mb-0">
+						{description}
+					</p>
+				</div>
+			</div>
+		))
+	}
+</div>

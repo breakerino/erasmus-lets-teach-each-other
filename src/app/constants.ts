@@ -1,3 +1,9 @@
+// Import section components
+import SummarySection from '../sections/SummarySection.astro';
+import HeroSection from '../sections/HeroSection.astro';
+import ObjectivesSection from '../sections/ObjectivesSection.astro';
+import PartnersSection from '../sections/PartnersSection.astro';
+
 export const SITE_NAME = 'Erasmus+ K2 | Let\'s teach each other';
 
 export { default as SITE_LOGO } from '/images/site-logo.svg';
@@ -29,12 +35,14 @@ export const NAVIGATION_ITEMS = [
 	}
 ];
 
-export const SITE_SECTIONS = {
-	hero: {
-
-	},
-	summary: {
+export const SITE_SECTIONS = [
+	// {
+	// 	id: 'hero',
+	// 	component: HeroSection,
+	// },
+	{
 		id: 'summary',
+		component: SummarySection,
 		heading: 'Summary',
 		columns: [
 			[
@@ -49,9 +57,13 @@ export const SITE_SECTIONS = {
 			]
 		]
 	},
-	objectives: {
+	{
 		id: 'objectives',
+		component: ObjectivesSection,
 		heading: 'Objectives',
+		className: {
+			wrapper: ['bg-blue-50', 'bg-opacity-50']
+		},
 		items: [
 			{ icon: '', text: 'Enhance the teacher\'s role in society by exchanging best practices and broaden professional, linguistic, social and personal competences of all project participants (students and teachers)' },
 			{ icon: '', text: 'Promote the learning of different subjects through creative and innovative teaching practice' },
@@ -61,8 +73,9 @@ export const SITE_SECTIONS = {
 			{ icon: '', text: 'Enhance digital integration in learning and youth work at various levels' },
 		]
 	},
-	partners: {
+	{
 		id: 'partners',
+		component: PartnersSection,
 		heading: 'Partners',
 		items: [
 			{
@@ -91,4 +104,4 @@ export const SITE_SECTIONS = {
 			}
 		]
 	}
-}
+]

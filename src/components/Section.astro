@@ -1,0 +1,31 @@
+---
+interface SectionProps {
+	id: string;
+	heading: string;
+	className?: {
+		wrapper?: string[]
+		content?: string[]
+	} 
+}
+
+const section: Partial<SectionProps> = {
+	...Astro.props,
+	className: {
+		wrapper: Astro.props?.className?.wrapper ?? [],
+		content: Astro.props?.className?.content ?? [],
+	}
+};
+---
+
+<section class:list={['py-40', ...section.className.wrapper]}>
+	<a id={section.id} class="block relative -top-[16rem]"></a>
+	
+	<div class:list={['container', 'h-full', 'flex', 'flex-col', ...section.className.content]}>
+		<hgroup class="flex flex-col gap-3 mb-10">
+			<h1 class:list={[ "text-blue-600", "w-fit", "text-4xl", "lg:text-5xl", "font-bold", "relative", "mb-4", "before:content-['']", "before:absolute", "before:-bottom-4", "before:w-1/3", "before:h-[0.5rem]", "before:rounded-md", `before:bg-${section.background ? 'slate-100' : 'slate-200'}`]}>
+				{section.heading}
+			</h1>
+		</hgroup>
+		<slot />
+	</div>
+</section>
