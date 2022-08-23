@@ -1,9 +1,7 @@
 ---
-import {
-	SITE_NAME,
-} from "../app/constants";
-
 import Header from '../components/Header.astro';
+
+const { site, header } = Astro.props;
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -19,11 +17,11 @@ import Header from '../components/Header.astro';
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="main.css" />
-		<title>{SITE_NAME}</title>
+		<title>{site.title}</title>
 	</head>
 	<body>
 		<div class="site-wrapper">
-			<Header />
+			<Header {...header} />
 			<main>
 				<slot />
 			</main>

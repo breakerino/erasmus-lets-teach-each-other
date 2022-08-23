@@ -2,20 +2,23 @@
 import SiteLayout from "../layouts/SiteLayout.astro";
 import Section from "../components/Section.astro";
 
-import { SITE_SECTIONS } from "../app/constants";
-
-import HeroSection from "../sections/HeroSection.astro";
+import { SITE_SECTIONS, SITE_NAME, SITE_LOGO } from "../app/constants";
 ---
 
-<SiteLayout>
-	<HeroSection />
+<SiteLayout
+	site={{
+		title: SITE_NAME,
+	}}
+	header={{
+		logo: SITE_LOGO,
+		items: SITE_SECTIONS.map(({ id, heading: label }) => ({ id, label })),
+	}}
+>
 	{
-		SITE_SECTIONS.map(
-			({component: SectionComponent, ...section}) => (
-				<Section {...section }>
-					<SectionComponent {...section } />
-				</Section>
-			)
-		)
+		SITE_SECTIONS.map(({ component: SectionComponent, ...section }) => (
+			<Section {...section}>
+				<SectionComponent {...section} />
+			</Section>
+		))
 	}
 </SiteLayout>
