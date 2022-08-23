@@ -40,8 +40,8 @@ export const SITE_SECTIONS = [
 		id: 'hero',
 		component: HeroSection,
 		className: {
-			wrapper: ['h-[40rem]','bg-gradient-to-b','from-blue-400','to-blue-600','py-40'],
-			content: ['flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between']
+			wrapper: ['bg-gradient-to-b','from-blue-400','to-blue-600', 'py-20', 'lg:py-40', 'lg:h-[40rem]'],
+			content: ['flex flex-col flex-col-reverse gap-8 lg:flex-row lg:items-center lg:justify-between']
 		}
 	},
 	{
@@ -49,7 +49,7 @@ export const SITE_SECTIONS = [
 		component: SummarySection,
 		heading: 'Summary',
 		className: {
-			wrapper: ['py-[8rem]'],
+			wrapper: ['py-10', 'md:py-20', 'lg:py-[8rem]'],
 			heading: ['before:bg-slate-200']
 		},
 		data: {
@@ -80,8 +80,8 @@ export const SITE_SECTIONS = [
 				{ icon: 'book', text: 'Promote the learning of different subjects through creative and innovative teaching practice' },
 				{ icon: 'tablet', text: 'Contribute to the improvement of the application of modern ICT and widen general knowledge to all target groups' },
 				{ icon: 'heritage', text: 'Change the attitude to the common European heritage' },
-				{ icon: 'teacher', text: 'Enhance the teacher\'s role in society by exchanging best practices and broaden professional, linguistic, social and personal competences of all project participants (students and teachers)' },
 				{ icon: 'language-globe', text: 'Enhance communication skills - both in mother tongue and in foreign language' },
+				{ icon: 'teacher', text: 'Enhance the teacher\'s role in society by exchanging best practices and broaden professional, linguistic, social and personal competences of all project participants (students and teachers)' },
 				{ icon: 'laptop', text: 'Enhance digital integration in learning and youth work at various levels' },
 			]
 		}
@@ -91,7 +91,7 @@ export const SITE_SECTIONS = [
 		component: PartnersSection,
 		heading: 'Partners',
 		className: {
-			wrapper: ['py-[8rem]'],
+			wrapper: ['py-10', 'md:py-20', 'lg:py-[8rem]'],
 			heading: ['before:bg-slate-200']
 		},
 		data: {
@@ -127,7 +127,7 @@ export const SITE_SECTIONS = [
 	// 	id: 'partners',
 	// 	component: PartnersSection,
 	// 	className: {
-	// 		wrapper: ['py-[8rem]'],
+	// 		wrapper: ['py-10', 'md:py-20', 'lg:py-[8rem]'],
 	// 		heading: ['before:bg-slate-200']
 	// 	},
 	// }
