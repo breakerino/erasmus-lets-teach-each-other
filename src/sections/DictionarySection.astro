@@ -7,7 +7,10 @@ const section = Astro.props;
 		<img class="object-contain object-center" src={section.data.image} alt="interactive-dictionary-logo" />
 	</div>
 	<div class="flex flex-col flex-1 gap-6">
-		<h1 class="text-blue-500 font-bold text-5xl">{section.data.heading}</h1>
+		<hgroup>
+			<h2 class="text-blue-500 font-medium text-xl">{section.data.subheading}</h2>
+			<h1 class="text-blue-500 font-bold text-5xl">{section.data.heading}</h1>
+		</hgroup>
 		<p class="text-blue-800 text-xl">{section.data.description}</p>
 		<a class="block w-fit text-white rounded-md px-10 py-4 text-lg bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-300 hover:to-blue-500" href={section.data.button.url} target="_blank">{section.data.button.label}</a>
 	</div>

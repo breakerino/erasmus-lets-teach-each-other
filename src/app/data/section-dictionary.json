@@ -1,0 +1,10 @@
+{
+	"subheading": "Lorem ipsum dolor sit amet",
+	"heading": "Interactive dictionary",
+	"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi, veritatis excepturi adipisci dignissimos tenetur quis debitis aut amet a?",
+	"image": "/images/img-interactive-dictionary-logo.png",
+	"button": {
+		"label": "Open dictionary",
+		"url": "https://erasmus-int-dict.breakerino.me"
+	}
+}

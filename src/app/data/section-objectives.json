@@ -1,0 +1,10 @@
+{
+	"items": [
+		{ "icon": "book", "text": "Promote the learning of different subjects through creative and innovative teaching practice" },
+		{ "icon": "tablet", "text": "Contribute to the improvement of the application of modern ICT and widen general knowledge to all target groups" },
+		{ "icon": "heritage", "text": "Change the attitude to the common European heritage" },
+		{ "icon": "language-globe", "text": "Enhance communication skills - both in mother tongue and in foreign language" },
+		{ "icon": "teacher", "text": "Enhance the teacher's role in society by exchanging best practices and broaden professional, linguistic, social and personal competences of all project participants (students and teachers)" },
+		{ "icon": "laptop", "text": "Enhance digital integration in learning and youth work at various levels" }
+	]
+}
