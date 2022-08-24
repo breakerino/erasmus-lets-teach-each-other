@@ -120,7 +120,7 @@ import {
 										<div class="w-16 aspect-square bg-gradient-to-b from-blue-400 to-blue-600 p-2 rounded-md">
 											<img
 												class="w-full h-full object-contain object-center"
-												src={`/images/ico-objective-${index + 1}.png`}
+												src={`/icons/ico-objective-${index + 1}.png`}
 												alt={`objective-${index + 1}`}
 											/>
 										</div>
@@ -152,7 +152,7 @@ import {
 												<div class="w-12 aspect-square bg-white shadow-md p-1 rounded-md absolute -top-8 -left-8">
 													<img
 														class="w-full h-full object-contain object-center"
-														src={`/images/ico-country-logo-${country}.svg`}
+														src={`/icons/ico-country-logo-${country}.svg`}
 														alt={`country-logo-${country}`}
 													/>
 												</div>

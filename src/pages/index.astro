@@ -1,21 +1,22 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
 import Section from "../components/Section.astro";
+import '../assets/css/main.css';
 
-import { SITE_SECTIONS, SITE_NAME, SITE_LOGO } from "../app/constants";
+import { sections, siteConfig } from "../app";
 ---
 
 <SiteLayout
 	site={{
-		title: SITE_NAME,
+		title: siteConfig.name,
 	}}
 	header={{
-		logo: SITE_LOGO,
-		items: SITE_SECTIONS.map(({ id, heading: label }) => ({ id, label })),
+		logo: siteConfig.logo,
+		items: sections.map(({ id, heading: label }) => ({ id, label })),
 	}}
 >
 	{
-		SITE_SECTIONS.map(({ component: SectionComponent, ...section }) => (
+		sections.map(({ component: SectionComponent, ...section }) => (
 			<Section {...section}>
 				<SectionComponent {...section} />
 			</Section>
