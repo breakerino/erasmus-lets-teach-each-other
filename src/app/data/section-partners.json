@@ -13,16 +13,16 @@
 			"id": "ssee"
 		},
 		{
-			"name": "Stredná odborná škola, Lipová 8, Handlová Slovakia",
-			"description": "Secondary vocational school provides education in technical and economic fields to almost 500 students. The greatest success is achieved by our students in national and international networking academy games competitions every year. The school has been participating in many international projects Erasmus+ and has many partners in various countries in Europe.",
-			"country": "sk",
-			"id": "sosha"
-		},
-		{
 			"name": "2o GENIKO LYKEIO NEAS IONIAS MAGNISIAS Volos Greece",
 			"description": "The 2nd upper secondary school of Nea Ionia-Volos is located in the Nea Ionia suburb of the town of Volos in central Greece.Our school is a general secondary school with 32 staff and more than 300 students - medium sized for Greek standards. Age range of our students is from 14-15 to 18 years. An Erasmus+ project is a good opportunity for them to improve their communicative and personal skills so we are the part of many various projects.",
 			"country": "tr",
 			"id": "mfl"
+		},
+		{
+			"name": "Stredná odborná škola, Lipová 8, Handlová Slovakia",
+			"description": "Secondary vocational school provides education in technical and economic fields to almost 500 students. The greatest success is achieved by our students in national and international networking academy games competitions every year. The school has been participating in many international projects Erasmus+ and has many partners in various countries in Europe.",
+			"country": "sk",
+			"id": "sosha"
 		}
 	]
 }
