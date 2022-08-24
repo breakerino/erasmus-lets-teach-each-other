@@ -73,13 +73,13 @@ export default [
 		},
 		data: ProjectWeeksSectionData
 	},
-	// {
-	// 	id: 'dictionary',
-	// 	component: DictionarySection,
-	// 	className: {
-	// 		wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
-	// 		heading: ['before:bg-blue-800', 'before:bg-opacity-10']
-	// 	},
-	// 	data: DictionarySectionData
-	// }
+	{
+		id: 'dictionary',
+		component: DictionarySection,
+		className: {
+			wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
+			heading: ['before:bg-blue-800', 'before:bg-opacity-10']
+		},
+		data: DictionarySectionData
+	}
 ]
