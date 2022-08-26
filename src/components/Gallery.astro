@@ -1,0 +1,51 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+const { images, id } = Astro.props;
+---
+
+<script>
+	import { initializeGalleries } from '../lib/gallery';
+	document.addEventListener('DOMContentLoaded', () => initializeGalleries({}));
+</script>
+
+<div data-gallery={id} class="flex flex-col gap-4">
+	<div class="splide slider__main">
+		<div class="splide__track">
+			<ul class="splide__list">
+				{
+					images.map((image) => (
+						<li class="splide__slide rounded-md overflow-hidden">
+							<Picture
+								widths={[320, 640, 720]}
+								sizes="(max-width: 800px) 100vw, 800px"
+								src={import(`${image.path}.jpg`)}
+								class:list={["bg-gray-100"]}
+								alt=""
+							/>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</div>
+
+	<div class="splide slider__thumbnails">
+		<div class="splide__track">
+			<ul class="splide__list">
+				{
+					images.map((image) => (
+						<li class="splide__slide rounded-md overflow-hidden">
+							<Image
+								class="object-cover h-full"
+								sizes="(max-width: 800px) 100vw, 800px"
+								src={import(`${image.path}.jpg`)}
+								class:list={["bg-gray-100"]}
+								alt=""
+							/>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    [data-tab-button].active {
+        @apply bg-blue-500;
+    }
+    [data-tab-button].active span {
+        @apply text-white;
+    }
+}

@@ -1,0 +1,70 @@
+{
+	"items": [
+		{
+			"country": {
+				"name": "Greece",
+				"code": "gr"
+			},
+			"activities": [
+				{
+					"name": "Week programme",
+					"file": "week-programme_gr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "What makes a team successful - C1",
+					"file": "what-makes-a-team-successful_gr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Interpersonal skills in teaching",
+					"file": "interpersonal-skills-in teaching_gr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "How to create a website",
+					"file": "how-to-create-a-website_gr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "How to create a website - C2",
+					"file": "how-to-create-a-website-c2_gr.pptx",
+					"type": "pptx"
+				}
+			],
+			"gallery": [
+				"img-gallery-gr_01",
+				"img-gallery-gr_02",
+				"img-gallery-gr_03",
+				"img-gallery-gr_04",
+				"img-gallery-gr_05",
+				"img-gallery-gr_06",
+				"img-gallery-gr_07"
+			]
+		},
+		{
+			"country": {
+				"name": "Czechia",
+				"code": "cz"
+			},
+			"activities": [],
+			"gallery": []
+		},
+		{
+			"country": {
+				"name": "Turkey",
+				"code": "tr"
+			},
+			"activities": [],
+			"gallery": []
+		},
+		{
+			"country": {
+				"name": "Slovakia",
+				"code": "sk"
+			},
+			"activities": [],
+			"gallery": []
+		}
+	]
+}

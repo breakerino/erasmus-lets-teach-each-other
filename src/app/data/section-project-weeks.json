@@ -50,19 +50,114 @@
 			"country": {
 				"name": "Czechia",
 				"code": "cz"
-			}
+			},
+			"dates": {
+				"from": "10/10/2021",
+				"to": "16/10/2021"
+			},
+			"activities": [
+				{
+					"name": "Week programme",
+					"file": "week-programme_cz.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Mentoring and coaching - C3",
+					"file": "mentoring-and-coaching-c3_cz.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "3D print - C4",
+					"file": "3d-print-c4_cz.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Working in Blender",
+					"file": "working-in-blender_cz.pdf",
+					"type": "pdf"
+				}
+			],
+			"gallery": [
+				"img-gallery-gr_01",
+				"img-gallery-gr_02",
+				"img-gallery-gr_03",
+				"img-gallery-gr_04",
+				"img-gallery-gr_05",
+				"img-gallery-gr_06",
+				"img-gallery-gr_07"
+			]
 		},
 		{
 			"country": {
 				"name": "Turkey",
 				"code": "tr"
-			}
+			},
+			"dates": {
+				"from": "27/03/2022",
+				"to": "02/04/2022"
+			},
+			"activities": [
+				{
+					"name": "Week programme",
+					"file": "week-programme_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "New ICT - C5",
+					"file": "new-ict-c5_tr.pdf",
+					"type": "pdf"
+				}
+			],
+			"gallery": [
+				"img-gallery-gr_01",
+				"img-gallery-gr_02",
+				"img-gallery-gr_03",
+				"img-gallery-gr_04",
+				"img-gallery-gr_05",
+				"img-gallery-gr_06",
+				"img-gallery-gr_07"
+			]
 		},
 		{
 			"country": {
 				"name": "Slovakia",
 				"code": "sk"
-			}
+			},
+			"dates": {
+				"from": "22/05/2022",
+				"to": "28/05/2022"
+			},
+			"activities": [
+				{
+					"name": "Week programme",
+					"file": "week-programme_sk.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Program an LED Light Show",
+					"file": "programming-an-led-light-show_sk.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Photo workshop - C8",
+					"file": "photo-workshop-c8_sk.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Motivational Techniques - C7",
+					"file": "motivational-techniques-c7_sk.pdf",
+					"type": "pdf"
+				}
+			],
+			"gallery": [
+				"img-gallery-gr_01",
+				"img-gallery-gr_02",
+				"img-gallery-gr_03",
+				"img-gallery-gr_04",
+				"img-gallery-gr_05",
+				"img-gallery-gr_06",
+				"img-gallery-gr_07"
+			]
 		}
 	]
 }
