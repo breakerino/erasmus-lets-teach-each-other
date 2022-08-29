@@ -18,7 +18,7 @@ const { images, id } = Astro.props;
 							<Picture
 								widths={[320, 640, 720]}
 								sizes="(max-width: 800px) 100vw, 800px"
-								src={import(`${image.path}.jpg`)}
+								src={image.path}
 								class:list={["bg-gray-100"]}
 								alt=""
 							/>
@@ -38,7 +38,7 @@ const { images, id } = Astro.props;
 							<Image
 								class="object-cover h-full"
 								sizes="(max-width: 800px) 100vw, 800px"
-								src={import(`${image.path}.jpg`)}
+								src={image.path}
 								class:list={["bg-gray-100"]}
 								alt=""
 							/>

@@ -62,7 +62,7 @@ const { country, dates, activities, gallery } = Astro.props;
 			<Gallery
 				id={`project-week-gallery_${country.code}`}
 				images={gallery.map((image) => ({
-					path: `../assets/project-weeks/gr/gallery/${image}`,
+					path: import(`../assets/project-weeks/gr/gallery/${image}.jpg`)
 				}))}
 			/>
 		</div>
