@@ -1,46 +1,31 @@
 ---
 import Gallery from "../components/Gallery.astro";
-const { country, dates, activities, gallery } = Astro.props;
+const { country, activities, gallery } = Astro.props;
 ---
 
 <!-- Project Week - View -->
-<div class="rounded-md overflow-hidden" data-tab-content data-tab-id={`project-week_${country.code}`}>
+<div class="rounded-md overflow-hidden" data-tab-content data-tab-id={`national-activity_${country.code}`}>
 	<!-- Project Week - Header -->
 	<hgroup
 		class="flex flex-row gap-4 text-blue-500 justify-between py-8 px-8 bg-blue-50 bg-opacity-50"
 	>
 		<h1 class="text-4xl font-semibold">{country.name}</h1>
-		<div class="flex flex-row gap-4 items-center">
-			{
-				Object.entries(dates).map(([type, date]: [string, string]) => (
-					<div class="text-lg">
-						<span class="text-light">
-							{new Date(date.split("/").reverse().join("-")).toLocaleDateString(
-								"en-GB",
-								{ weekday: "long" }
-							)}
-						</span>
-						<strong class="text-semibold">{date}</strong>
-					</div>
-				))
-			}
-		</div>
 	</hgroup>
 
-	<!-- Project Week - Content -->
-	<div class="bg-white p-8 grid grid-cols-5 gap-8">
-	<!-- Project Week - Gallery -->
-	<div class="col-span-3" aria-label="gallery">
-		<Gallery
-			id={`project-week-gallery_${country.code}`}
-			images={gallery.map((image) => ({
-				url: `project-weeks/${country.code}/gallery/${image}.jpg`,
-				path: import(`../assets/project-weeks/${country.code}/gallery/${image}.jpg`)
-			}))}
-		/>
-	</div>
+	<!-- Project Week - Content --> 
+	<div class="bg-white p-8 grid grid-cols-2 gap-8">
+		<!-- Project Week - Gallery -->
+		<div>
+			<Gallery
+				id={`national-activity-gallery_${country.code}`}
+				images={gallery.map((image) => ({
+					url: `national-activities/${country.code}/gallery/${image}.jpg`,
+					path: import(`../assets/national-activities/${country.code}/gallery/${image}.jpg`)
+				}))}
+			/>
+		</div>
 		<!-- Project Week - Activities -->
-		<div class="col-span-2" aria-label="activities">
+		<div>
 			<h2 class="text-2xl text-blue-500 font-semibold mb-6">Activities</h2>
 			<ul class="flex flex-col list-none">
 				{
