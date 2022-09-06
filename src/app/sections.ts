@@ -39,6 +39,7 @@ export default [
 		id: 'summary',
 		component: SummarySection,
 		heading: 'Summary',
+		label: 'Summary',
 		className: {
 			wrapper: ['py-10', 'md:py-20', 'lg:py-[8rem]'],
 			heading: ['before:bg-slate-200']
@@ -49,6 +50,7 @@ export default [
 		id: 'objectives',
 		component: ObjectivesSection,
 		heading: 'Objectives',
+		label: 'Objectives',
 		headingPosition: 'center',
 		className: {
 			wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
@@ -60,6 +62,7 @@ export default [
 		id: 'partners',
 		component: PartnersSection,
 		heading: 'Partners',
+		label: 'Partners',
 		className: {
 			wrapper: ['py-10', 'md:py-20', 'lg:py-[8rem]'],
 			heading: ['before:bg-slate-200']
@@ -70,6 +73,7 @@ export default [
 		id: 'project-weeks',
 		component: ProjectWeeksSection,
 		heading: 'Project weeks',
+		label: 'Project weeks',
 		headingPosition: 'center',
 		className: {
 			wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
@@ -81,6 +85,7 @@ export default [
 		id: 'national-activities',
 		component: NationalActivitiesSection,
 		heading: 'National activities',
+		label: 'National activities',
 		headingPosition: 'center',
 		className: {
 			wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
@@ -90,6 +95,7 @@ export default [
 	},
 	{
 		id: 'dictionary',
+		label: 'Dictionary',
 		component: DictionarySection,
 		className: {
 			wrapper: ['py-10', 'md:py-20', 'lg:py-[8rem]'],
