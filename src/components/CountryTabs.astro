@@ -4,20 +4,22 @@ const { groupID, items } = Astro.props;
 
 <!-- Tabs -->
 <div class="flex flex-col lg:flex-row gap-4">
-    {
-        items.map(({ country }) => (
-            <button class="flex items-center gap-3 p-2 shadow-md bg-white flex-1 rounded-md" data-tab-button data-tab-id={`${groupID}_${country.code}`}>
-                <div class="w-8 aspect-square">
-                    <img
-                        class="w-full h-full object-contain object-center"
-                        src={`/icons/ico-country-logo-${country.code}.svg`}
-                        alt={`country-logo-${country.code}`}
-                    />
-                </div>
-                <span class="text-blue-700 font-semibold text-xl">
-                    {country.name}
-                </span>
-            </button>
-        ))
-    }
+	{
+		items.map(({ country }) => (
+			<button
+				class="flex items-center gap-2 lg:gap-3 p-2 shadow-md bg-white flex-1 rounded-md"
+				data-tab-button
+				data-tab-id={`${groupID}_${country.code}`}
+			>
+				<div class="w-6 lg:w-8 aspect-square">
+					<img
+						class="w-full h-full object-contain object-center"
+						src={`/icons/ico-country-logo-${country.code}.svg`}
+						alt={`country-logo-${country.code}`}
+					/>
+				</div>
+				<span class="text-blue-700 font-semibold text-lg lg:text-xl">{country.name}</span>
+			</button>
+		))
+	}
 </div>

@@ -1,6 +1,7 @@
 ---
 interface SectionProps {
 	id: string;
+	index: number;
 	heading?: string;
 	headingPosition?: 'start' | 'center' | 'end';
 	className?: {
@@ -22,13 +23,13 @@ const section: Partial<SectionProps> = {
 };
 ---
 
-<section class:list={[`section__${section.id}`, ...section.className.wrapper]}>
+<section data-id={section.index} class:list={[`section__${section.id}`, ...section.className.wrapper]}>
 	<a id={section.id} class="block relative -top-[12rem]"></a>
 	
 	<div class:list={['container', 'h-full', ...section.className.container]}>
 		{section.heading &&
-			<hgroup class:list={["flex", "flex-col", "gap-3", "mb-12", `items-${section.headingPosition}`]}>
-				<h1 class:list={[ "text-blue-600", "w-fit", "text-4xl", "lg:text-5xl", "font-bold", "relative", "mb-6", "before:content-['']", "before:absolute", "before:-bottom-6",  "before:w-1/3", "before:h-[0.5rem]", "before:rounded-md", ...(section.headingPosition === 'center' ? ['before:left-1/2', 'before:-translate-x-1/2'] : []), ...section.className.heading]}>
+			<hgroup class:list={["flex", "flex-col", "gap-3", "mb-6", "lg:mb-12", `items-${section.headingPosition}`]}>
+				<h1 class:list={[ "text-blue-600", "w-fit", "text-3xl", "md:text-4xl", "lg:text-5xl", "font-bold", "relative", "mb-6", "before:content-['']", "before:absolute", "before:-bottom-6",  "before:w-1/3", "before:h-[0.5rem]", "before:rounded-md", ...(section.headingPosition === 'center' ? ['before:left-1/2', 'before:-translate-x-1/2'] : []), ...section.className.heading]}>
 					{section.heading}
 				</h1>
 			</hgroup>

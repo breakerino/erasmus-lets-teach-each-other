@@ -7,20 +7,23 @@ const { country, dates, activities, gallery } = Astro.props;
 <div class="rounded-md overflow-hidden" data-tab-content data-tab-id={`project-week_${country.code}`}>
 	<!-- Project Week - Header -->
 	<hgroup
-		class="flex flex-row gap-4 text-blue-500 justify-between py-8 px-8 bg-blue-50 bg-opacity-50"
+		class="flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-4 text-blue-500 justify-between py-6 px-6 lg:py-8 lg:px-8 bg-blue-50 bg-opacity-50"
 	>
-		<h1 class="text-4xl font-semibold">{country.name}</h1>
+		<h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold">{country.name}</h1>
 		<div class="flex flex-row gap-4 items-center">
 			{
 				Object.entries(dates).map(([type, date]: [string, string]) => (
-					<div class="text-lg">
-						<span class="text-light">
-							{new Date(date.split("/").reverse().join("-")).toLocaleDateString(
-								"en-GB",
-								{ weekday: "long" }
-							)}
+					<div class="flex flex-row items-center gap-2 text-md lg:text-lg">
+						<img src={`/icons/ico-${type === 'to' ? 'departure' : 'arrival'}.png`} alt="" />
+						<span>
+							<span class="text-light">
+								{new Date(date.split("/").reverse().join("-")).toLocaleDateString(
+									"en-GB",
+									{ weekday: "long" }
+								)}
+							</span>
+							<strong class="text-semibold">{date}</strong>
 						</span>
-						<strong class="text-semibold">{date}</strong>
 					</div>
 				))
 			}
@@ -28,7 +31,7 @@ const { country, dates, activities, gallery } = Astro.props;
 	</hgroup>
 
 	<!-- Project Week - Content -->
-	<div class="bg-white p-8 grid grid-cols-5 gap-8">
+	<div class="bg-white py-6 px-6 lg:py-8 lg:px-8 flex flex-col gap-6 lg:grid lg:grid-cols-5 lg:gap-8">
 	<!-- Project Week - Gallery -->
 	<div class="col-span-3" aria-label="gallery">
 		<Gallery
@@ -45,7 +48,7 @@ const { country, dates, activities, gallery } = Astro.props;
 			<ul class="flex flex-col list-none">
 				{
 					activities.map(({ name, file, type }) => (
-						<li class="pb-2 mb-2 gap-4 last:mb-0 border-b last:border-b-0 flex items-center justify-between">
+						<li class="pb-2 mb-2 gap-4 last:mb-0 border-b last:border-b-0 flex flex-col lg:flex-row lg:items-center lg:justify-between">
 							<div class="flex items-center gap-3">
 								<img src={`/icons/ico-file-type-${type}.svg`} alt="" />
 								<span class="text-blue-500">{name}</span>

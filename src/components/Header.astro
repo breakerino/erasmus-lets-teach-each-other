@@ -2,17 +2,43 @@
 const header = Astro.props;
 ---
 
+<script>
+	import { navigationHandler, initializeMobileMenu } from '../lib/navigation';
+	
+	navigationHandler.init(
+		document.querySelectorAll("main>section"),
+		document.querySelector("nav")
+	);
+
+	initializeMobileMenu();
+</script>
+
 <header class="sticky top-0 w-full bg-blue-400 z-10">
-	<div class="flex justify-between gap-5 text-white container px-4 py-9">
-		<img src={header.logo} alt="site-logo" />
-		<nav class="flex items-center gap-8">
-			{
-				header.items.map(({ id, label }) => (
-					<a class="text-md uppercase font-normal" href={`#${id}`}>
-						{label}
-					</a>
-				))
-			}
-		</nav>
+	<div class="flex justify-between gap-5 text-white container px-4 lg:py-9 py-6">
+		<div class="flex flex-col gap-1 md:flex-row md:items-center md:gap-3">
+			<strong class="leading-none text-xl font-medium uppercase">{header.logo.heading}</strong>
+			<small class="leading-none text-[1rem] font-light">{header.logo.subheading}</small>
+		</div>
+		<button class="lg:hidden" data-menu-toggler aria-label="open menu">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+			</svg>			
+		</button>
+		<div class="site-navigation__wrapper" data-menu-wrapper>
+			<button class="lg:hidden text-blue-500 absolute top-5 right-5" data-menu-close aria-label="close menu">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				</svg>					
+			</button>
+			<nav class="flex flex-col text-blue-500 gap-3 lg:flex-row lg:items-center lg:gap-4 lg:text-white xl:gap-8">
+				{
+					header.items.map(({ id, label }) => (
+						<a class="lg:text-md text-sm uppercase font-normal" href={`#${id}`}>
+							<span>{label}</span>
+						</a>
+					))
+				}
+			</nav>
+		</div>
 	</div>
 </header>
