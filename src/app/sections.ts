@@ -22,6 +22,10 @@ import * as DictionarySectionData from '../app/data/section-dictionary.json';
 import ProjectWeeksSection from '../sections/ProjectWeeksSection.astro';
 import * as ProjectWeeksSectionData from '../app/data/section-project-weeks.json';
 
+// ProjectWeeks section
+import NationalActivitiesSection from '../sections/NationalActivitiesSection.astro';
+import * as NationalActivitiesSectionData from '../app/data/section-national-activities.json';
+
 export default [
 	{
 		id: 'hero',
@@ -74,11 +78,22 @@ export default [
 		data: ProjectWeeksSectionData
 	},
 	{
+		id: 'national-activities',
+		component: NationalActivitiesSection,
+		heading: 'National activities',
+		headingPosition: 'center',
+		className: {
+			wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
+			heading: ['before:bg-blue-800', 'before:bg-opacity-10 text-center']
+		},
+		data: NationalActivitiesSectionData
+	},
+	{
 		id: 'dictionary',
 		component: DictionarySection,
 		className: {
-			wrapper: ['py-10', 'md:py-20', 'lg:py-[6rem]', 'bg-blue-50', 'bg-opacity-30'],
-			heading: ['before:bg-blue-800', 'before:bg-opacity-10']
+			wrapper: ['py-10', 'md:py-20', 'lg:py-[8rem]'],
+			heading: ['before:bg-slate-200']
 		},
 		data: DictionarySectionData
 	}
