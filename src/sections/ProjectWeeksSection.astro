@@ -7,11 +7,11 @@ const section = Astro.props;
 ---
 <script>
 	import { initializeTabs } from '../lib/tabs.ts';
-	document.addEventListener('DOMContentLoaded', () => initializeTabs());
+	document.addEventListener('DOMContentLoaded', () => initializeTabs('.section__project-weeks'));
 </script>
 
 <div class="flex flex-col gap-4">
-	<CountryTabs items={section.data.items} />
+	<CountryTabs groupID="project-week" items={section.data.items} />
 	<div class="flex flex-col gap-8">
 	{section.data.items.map((item) => (
 		<ProjectWeekView {...item} />
