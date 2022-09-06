@@ -7,39 +7,29 @@
 			},
 			"activities": [
 				{
-					"name": "Week programme",
-					"file": "week-programme_gr.pdf",
+					"name": "Description of the excursion activity",
+					"file": "description-of-the-excursion_activity_gr.pdf",
 					"type": "pdf"
 				},
 				{
-					"name": "What makes a team successful - C1",
-					"file": "what-makes-a-team-successful_gr.pdf",
+					"name": "Description of the teacher's activity I.",
+					"file": "description-of-the-teachers_activity-1_gr.pdf",
 					"type": "pdf"
 				},
 				{
-					"name": "Interpersonal skills in teaching",
-					"file": "interpersonal-skills-in teaching_gr.pdf",
+					"name": "Description of the teacher's activity II.",
+					"file": "description-of-the-teachers_activity-2_gr.pdf",
 					"type": "pdf"
-				},
-				{
-					"name": "How to create a website",
-					"file": "how-to-create-a-website_gr.pdf",
-					"type": "pdf"
-				},
-				{
-					"name": "How to create a website - C2",
-					"file": "how-to-create-a-website-c2_gr.pptx",
-					"type": "pptx"
 				}
 			],
 			"gallery": [
+				"img-national-activities_gr",
 				"img-gallery-gr_01",
 				"img-gallery-gr_02",
 				"img-gallery-gr_03",
 				"img-gallery-gr_04",
 				"img-gallery-gr_05",
-				"img-gallery-gr_06",
-				"img-gallery-gr_07"
+				"img-gallery-gr_06"
 			]
 		},
 		{
@@ -47,24 +37,169 @@
 				"name": "Czechia",
 				"code": "cz"
 			},
-			"activities": [],
-			"gallery": []
+			"activities": [
+				{
+					"name": "Excursions Sokolnice - Brno",
+					"file": "excursions-sokolnice-brno_cz.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Excursions Sokolnice - Praha",
+					"file": "excursions-sokolnice-praha_cz.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "First meeting Greece",
+					"file": "first-meeting-greece_cz.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Activity for teachers I.",
+					"file": "the-first-teaching-and-learning-activity-in-sokolnice_cz.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Activity for teachers II.",
+					"file": "the-second-teaching-and-learning-activity-in-sokolnice_cz.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Traditional workshop",
+					"file": "traditional-workshop_cz.pdf",
+					"type": "pdf"
+				}
+			],
+			"gallery": [
+				"img-national-activities_cz"
+			]
 		},
 		{
 			"country": {
 				"name": "Turkey",
 				"code": "tr"
 			},
-			"activities": [],
-			"gallery": []
+			"activities": [
+				{
+					"name": "Description of the teacher's activity",
+					"file": "description-of-the-teachers-activity_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Brochure",
+					"file": "brochure_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Video I.",
+					"file": "video-1_tr.mp4",
+					"type": "mp4"
+				},
+				{
+					"name": "Video II.",
+					"file": "video-2_tr.mp4",
+					"type": "mp4"
+				},
+				{
+					"name": "Video III.",
+					"file": "video-3_tr.mp4",
+					"type": "mp4"
+				},
+				{
+					"name": "Video IV.",
+					"file": "video-4_tr.mp4",
+					"type": "mp4"
+				},
+				{
+					"name": "Video V.",
+					"file": "video-5_tr.mp4",
+					"type": "mp4"
+				},
+				{
+					"name": "Excursion to Bursa",
+					"file": "excursion-to-bursa_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Excursion to Edirne",
+					"file": "excursion-to-edirne_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Traditional workshop I.",
+					"file": "traditional-workshop-i_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Traditional workshop II.",
+					"file": "traditional-workshop-ii_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Activity for teachers I.",
+					"file": "activity-for-teachers-i_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Activity for teachers II.",
+					"file": "activity-for-teachers-ii_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Activities in Turkey",
+					"file": "activities-in-turkey_tr.pdf",
+					"type": "pdf"
+				}
+			],
+			"gallery": [
+				"img-national-activities_tr"
+			]
 		},
 		{
 			"country": {
 				"name": "Slovakia",
 				"code": "sk"
 			},
-			"activities": [],
-			"gallery": []
+			"activities": [
+				{
+					"name": "National activity I.",
+					"file": "national-activity-1_sk.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "National activity II.",
+					"file": "national-activity-2_sk.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "National activity III.",
+					"file": "national-activity-3_sk.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "National activity IV.",
+					"file": "national-activity-4_sk.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "National activity V.",
+					"file": "national-activity-1_sk.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "National activity VI.",
+					"file": "national-activity-6_sk.pdf",
+					"type": "pdf"
+				}
+			],
+			"gallery": [
+				"img-national-activities_sk",
+				"img-gallery-sk_01",
+				"img-gallery-sk_02",
+				"img-gallery-sk_03",
+				"img-gallery-sk_04",
+				"img-gallery-sk_05",
+				"img-gallery-sk_06"
+			]
 		}
 	]
 }

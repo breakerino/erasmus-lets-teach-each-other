@@ -68,7 +68,7 @@
 				},
 				{
 					"name": "3D print - C4",
-					"file": "3d-print-c4_cz.pdf",
+					"file": "3d-print-activity-c4_cz.pdf",
 					"type": "pdf"
 				},
 				{
@@ -78,13 +78,16 @@
 				}
 			],
 			"gallery": [
-				"img-gallery-gr_01",
-				"img-gallery-gr_02",
-				"img-gallery-gr_03",
-				"img-gallery-gr_04",
-				"img-gallery-gr_05",
-				"img-gallery-gr_06",
-				"img-gallery-gr_07"
+				"img-gallery-cz_01",
+				"img-gallery-cz_02",
+				"img-gallery-cz_03",
+				"img-gallery-cz_04",
+				"img-gallery-cz_05",
+				"img-gallery-cz_06",
+				"img-gallery-cz_07",
+				"img-gallery-cz_08",
+				"img-gallery-cz_09",
+				"img-gallery-cz_10"
 			]
 		},
 		{
@@ -106,16 +109,33 @@
 					"name": "New ICT - C5",
 					"file": "new-ict-c5_tr.pdf",
 					"type": "pdf"
+				},
+				{
+					"name": "Arduino - C6",
+					"file": "activity-c6-arduino_tr.pdf",
+					"type": "pdf"
+				},
+				{
+					"name": "Game - C6",
+					"file": "activity-c6-game_tr.pdf",
+					"type": "pdf"
 				}
 			],
 			"gallery": [
-				"img-gallery-gr_01",
-				"img-gallery-gr_02",
-				"img-gallery-gr_03",
-				"img-gallery-gr_04",
-				"img-gallery-gr_05",
-				"img-gallery-gr_06",
-				"img-gallery-gr_07"
+				"img-gallery-tr_01",
+				"img-gallery-tr_02",
+				"img-gallery-tr_03",
+				"img-gallery-tr_04",
+				"img-gallery-tr_05",
+				"img-gallery-tr_06",
+				"img-gallery-tr_07",
+				"img-gallery-tr_08",
+				"img-gallery-tr_09",
+				"img-gallery-tr_10",
+				"img-gallery-tr_11",
+				"img-gallery-tr_12",
+				"img-gallery-tr_13",
+				"img-gallery-tr_14"
 			]
 		},
 		{
@@ -135,12 +155,12 @@
 				},
 				{
 					"name": "Program an LED Light Show",
-					"file": "programming-an-led-light-show_sk.pdf",
+					"file": "program-a-led-light-show_sk.pdf",
 					"type": "pdf"
 				},
 				{
 					"name": "Photo workshop - C8",
-					"file": "photo-workshop-c8_sk.pdf",
+					"file": "photo-workshop-activity-c8_sk.pdf",
 					"type": "pdf"
 				},
 				{
@@ -150,13 +170,20 @@
 				}
 			],
 			"gallery": [
-				"img-gallery-gr_01",
-				"img-gallery-gr_02",
-				"img-gallery-gr_03",
-				"img-gallery-gr_04",
-				"img-gallery-gr_05",
-				"img-gallery-gr_06",
-				"img-gallery-gr_07"
+				"img-gallery-sk_01",
+				"img-gallery-sk_02",
+				"img-gallery-sk_03",
+				"img-gallery-sk_04",
+				"img-gallery-sk_05",
+				"img-gallery-sk_06",
+				"img-gallery-sk_07",
+				"img-gallery-sk_08",
+				"img-gallery-sk_09",
+				"img-gallery-sk_10",
+				"img-gallery-sk_11",
+				"img-gallery-sk_12",
+				"img-gallery-sk_13",
+				"img-gallery-sk_14"
 			]
 		}
 	]
