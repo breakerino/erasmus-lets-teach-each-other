@@ -6,12 +6,12 @@ const section = Astro.props;
 	<div class="flex w-1/4">
 		<img class="object-contain object-center shadow-sm rounded-md" src={section.data.image} alt="interactive-dictionary-logo" />
 	</div>
-	<div class="flex flex-col flex-1 gap-6">
+	<div class="flex flex-col flex-1 gap-4">
 		<hgroup>
-			<h2 class="text-blue-500 font-medium text-xl">{section.data.subheading}</h2>
-			<h1 class="text-blue-500 font-bold text-5xl">{section.data.heading}</h1>
+			<h2 class="text-blue-500 font-medium text-lg sm:text-xl">{section.data.subheading}</h2>
+			<h1 class="text-blue-500 font-bold text-2xl sm:text-3xl lg:text-5xl">{section.data.heading}</h1>
 		</hgroup>
-		<p class="text-blue-800 text-xl">{section.data.description}</p>
+		<p class="text-blue-800 text-light lg:text-xl text-lg">{section.data.description}</p>
 		<a class="block w-fit text-white rounded-md px-10 py-4 text-lg bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-300 hover:to-blue-500" href={section.data.button.url} target="_blank">{section.data.button.label}</a>
 	</div>
 </div>
