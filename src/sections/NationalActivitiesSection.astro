@@ -1,0 +1,20 @@
+---
+import "@splidejs/splide/css/core";
+import CountryTabs from "../components/CountryTabs.astro";
+import NationalActivityView from "../components/NationalActivityView.astro";
+
+const section = Astro.props;
+---
+<script>
+	import { initializeTabs } from '../lib/tabs.ts';
+	document.addEventListener('DOMContentLoaded', () => initializeTabs('.section__national-activities'));
+</script>
+
+<div class="flex flex-col gap-4">
+	<CountryTabs groupID="national-activity" items={section.data.items} />
+	<div class="flex flex-col gap-8">
+	{section.data.items.map((item) => (
+		<NationalActivityView {...item} />
+	))}
+	</div>
+</div>
