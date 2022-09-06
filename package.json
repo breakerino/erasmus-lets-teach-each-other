@@ -19,6 +19,7 @@
     "react-dom": "^18.0.0"
   },
   "dependencies": {
-    "@splidejs/splide": "^4.0.7"
+    "@splidejs/splide": "^4.0.7",
+    "fslightbox": "^3.3.1"
   }
 }
