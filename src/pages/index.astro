@@ -1,23 +1,29 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
 import Section from "../components/Section.astro";
-import '../assets/css/main.css';
+import '../assets/css/main.scss';
 
 import { sections, siteConfig } from "../app";
 ---
 
+<script>
+	import * as fsLightBox from 'fslightbox';
+	console.log(fsLightBox)
+</script>
+
 <SiteLayout
 	site={{
 		title: siteConfig.name,
+		description: siteConfig.description
 	}}
 	header={{
 		logo: siteConfig.logo,
-		items: sections.map(({ id, heading: label }) => ({ id, label })),
+		items: sections.filter(({label}) => label).map(({ id, label }) => ({ id, label })),
 	}}
 >
 	{
-		sections.map(({ component: SectionComponent, ...section }) => (
-			<Section {...section}>
+		sections.map(({ component: SectionComponent, ...section }, index) => (
+			<Section {...{...section, index}}>
 				<SectionComponent {...section} />
 			</Section>
 		))
