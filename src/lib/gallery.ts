@@ -11,7 +11,6 @@ export const initializeGalleries = (options = {}) => {
 }
 
 export const initializeGallery = (id, options) => {
-	console.log(`[data-gallery=${id}] .splide.slider__main`)
 	const sliders = {
 		main: new Splide(`[data-gallery=${id}] .splide.slider__main`, {
 			type: 'fade',
