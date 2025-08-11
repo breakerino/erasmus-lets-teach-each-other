@@ -1,10 +1,10 @@
 {
-	"subheading": "Lorem ipsum dolor sit amet",
+	"subheading": "Erasmus",
 	"heading": "Interactive dictionary",
-	"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi, veritatis excepturi adipisci dignissimos tenetur quis debitis aut amet a?",
+	"description": "A multilingual tool that organizes vocabulary into clear categories, each containing terms with translations, definitions, and examples across multiple languages, allowing users to view and compare terms side-by-side for easier learning and cultural exchange.",
 	"image": "/images/img-interactive-dictionary-logo.png",
 	"button": {
 		"label": "Open dictionary",
-		"url": "https://erasmus-int-dict.breakerino.me"
+		"url": "https://erasmus-interactive-dictionary.breakerino.me"
 	}
 }
