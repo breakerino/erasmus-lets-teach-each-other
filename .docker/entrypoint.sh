@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+echo "📦 Installing dependencies..."
+yarn install --frozen-lockfile
+
 echo "🚀 Building Astro app..."
 yarn build
 
